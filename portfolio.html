@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Yada Sarakoon | Business Analyst Portfolio</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        html { scroll-behavior: smooth; } /* ทำให้การเลื่อนหน้าจอนุ่มนวล */
+        .hover-instagram:hover { color: #E4405F; border-color: #E4405F; }
+        .hover-facebook:hover { color: #1877F2; border-color: #1877F2; }
+        .hover-line:hover { color: #06C755; border-color: #06C755; }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                   },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            }, 
+        } 
+    </script>
+</head>
+<body>
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden font-display">
+    <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e5e7eb] dark:border-b-[#283039] px-10 py-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="flex items-center gap-3 text-[#111418] dark:text-white">
+            <div class="size-8 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined !text-3xl">analytics</span>
+            </div>
+            <h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">WELCOME TO MY PORTFOLIO</h2>
+        </div>
+        <div class="flex flex-1 justify-end gap-8 items-center">
+            <div class="hidden md:flex items-center gap-8 text-[#111418] dark:text-white text-sm font-medium">
+                <a class="hover:text-primary transition-colors" href="#about">About</a>
+                <a class="hover:text-primary transition-colors" href="#projects">Projects</a>
+                <a class="hover:text-primary transition-colors" href="#resume-link">Resume</a>
+            </div>
+            <a href="#contact" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center rounded-full h-10 px-6 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-colors shadow-lg shadow-blue-500/20">
+                <span class="truncate">Contact Me</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex flex-1 justify-center py-5">
+        <div class="flex flex-col max-w-[1200px] flex-1 px-4 md:px-8">
+            
+            <div id="about" class="flex flex-col-reverse md:flex-row gap-12 pt-6 pb-10 md:pt-10 md:pb-20 items-start">
+                <div class="flex flex-col gap-8 flex-1">
+                    <div class="flex flex-col gap-4 text-left">
+                        
+                        <h1 class="text-[#111418] dark:text-white text-4xl md:text-6xl font-black leading-[1.1] tracking-[-0.033em]">
+                            Yada <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Sarakoon</span>
+                        </h1>
+                        <h2 class="text-[#637588] dark:text-[#9dabb9] text-lg md:text-xl font-normal leading-relaxed max-w-2xl">
+                            Business Analyst Intern | AI & Intelligent Technology Enthusiast. 
+                            I am Yada Sarakoon, a student of Applied Artificial Intelligence and Smart Technology at Burapha University. My academic journey has equipped me with a unique blend of technical expertise and an analytical mindset. I specialize in transforming complex data into actionable insights to help businesses make informed decisions.
+                        </h2>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#projects" class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-all shadow-lg shadow-blue-500/25 gap-2">
+                            <span class="material-symbols-outlined text-[20px]">visibility</span>
+                            <span class="truncate">View My Projects</span>
+                        </a>
+                        <a id="resume-link" href="Resume_Yada_Sarakoon.pdf" target="_blank" download class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-transparent border border-[#dce0e5] dark:border-[#283039] text-[#111418] dark:text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#f0f2f4] dark:hover:bg-[#1a2632] transition-colors gap-2">
+                            <span class="material-symbols-outlined text-[20px]">download</span>
+                            <span class="truncate">Download Resume</span>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col gap-6 py-10 border-t border-[#e5e7eb] dark:border-[#283039] mt-4">
+                        <div class="flex flex-col gap-2">
+                            <h2 class="text-[#111418] dark:text-white text-2xl font-bold">Education</h2>
+                            <p class="text-[#637588] dark:text-[#9dabb9] text-base">My academic background and foundations</p>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div class="flex flex-col gap-3 p-6 rounded-xl bg-white dark:bg-[#1a2632] border border-[#e5e7eb] dark:border-[#283039] shadow-sm">
+                                <div class="flex justify-between items-start">
+                                    <div class="flex flex-col gap-1">
+                                        <h3 class="text-[#111418] dark:text-white font-bold text-lg">Burapha University</h3>
+                                        <p class="text-primary text-sm font-semibold italic">Bachelor of Informatics</p>
+                                    </div>
+                                    <span class="text-xs font-bold py-1 px-3 rounded-full bg-primary/10 text-primary">2023 - Present</span>
+                                </div>
+                                <p class="text-[#637588] dark:text-[#9dabb9] text-sm leading-relaxed max-w-3xl">
+                                    Applied Artificial Intelligence and Smart Technology, Focusing on bridging technical innovation with business strategy.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-3 p-6 rounded-xl bg-white dark:bg-[#1a2632] border border-[#e5e7eb] dark:border-[#283039] shadow-sm">
+                                <div class="flex justify-between items-start">
+                                    <div class="flex flex-col gap-1">
+                                        <h3 class="text-[#111418] dark:text-white font-bold text-lg">Chonradsadornumrung School</h3>
+                                        <p class="text-[#637588] dark:text-[#9dabb9] text-sm font-semibold">High School</p>
+                                    </div>
+                                    <span class="text-xs font-bold py-1 px-3 rounded-full bg-[#637588]/10 text-[#637588]">2019 - 2022</span>
+                                </div>
+                                <p class="text-[#637588] dark:text-[#9dabb9] text-sm leading-relaxed max-w-3xl">
+                                    Science-Mathematics Program
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-6 mt-4 pt-8 border-t border-[#e5e7eb] dark:border-[#283039]">
+                        <p class="text-xs font-bold uppercase tracking-wider text-[#637588] dark:text-[#6b7280]">Key Skills & Expertise</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12 text-[#637588] dark:text-[#9dabb9]">
+                            <div class="flex flex-col gap-3">
+                                <p class="text-xs font-bold text-primary/70 uppercase tracking-widest">Analysis & Strategy</p>
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">fact_check</span><span class="text-sm font-medium">Requirement Gathering</span></div>
+                                    <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">account_tree</span><span class="text-sm font-medium">Business Process Analysis</span></div>
+                                    <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">rocket_launch</span><span class="text-sm font-medium">Process Optimization</span></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <p class="text-xs font-bold text-primary/70 uppercase tracking-widest">Data & Tech Stack</p>
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">bar_chart</span><span class="text-sm font-medium">Power BI & Visualization</span></div>
+                                    <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">database</span><span class="text-sm font-medium">SQL & Data Preprocessing</span></div>
+                                    <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[20px]">psychology</span><span class="text-sm font-medium">Machine Learning & NLP</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2 flex justify-center md:justify-end relative md:-mt-2">
+                    <div class="absolute inset-0 bg-primary/20 blur-[100px] rounded-full scale-75 dark:bg-primary/10"></div>
+                    <div class="relative w-full max-w-[450px] aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border border-[#e5e7eb] dark:border-[#283039] bg-surface-dark group">
+                        <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style='background-image: url("S__8650898.jpg");'></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/90 via-black/50 to-transparent">
+                            <div class="flex justify-between items-end">
+                                <div>
+                                    <p class="text-white font-bold text-lg">Yada Sarakoon</p>
+                                    <p class="text-white/80 text-sm">Business Analyst Intern</p>
+                                </div>
+                                <div class="size-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center border border-white/20">
+                                    <span class="material-symbols-outlined text-white">arrow_outward</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+                <div class="flex flex-col gap-2 p-6 rounded-xl bg-white dark:bg-[#1a2632] border border-[#e5e7eb] dark:border-[#283039] hover:border-primary/50 transition-all shadow-sm group">
+                    <div class="size-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-2 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined">analytics</span>
+                    </div>
+                    <h3 class="text-[#111418] dark:text-white font-bold text-lg">Strategic Data Analysis</h3>
+                    <p class="text-[#637588] dark:text-[#9dabb9] text-sm leading-relaxed">Transforming complex datasets into actionable business plans and strategic insights.</p>
+                </div>
+            
+                <div class="flex flex-col gap-2 p-6 rounded-xl bg-white dark:bg-[#1a2632] border border-[#e5e7eb] dark:border-[#283039] hover:border-primary/50 transition-all shadow-sm group">
+                    <div class="size-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-2 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined">psychology</span>
+                    </div>
+                    <h3 class="text-[#111418] dark:text-white font-bold text-lg">AI & Tech Integration</h3>
+                    <p class="text-[#637588] dark:text-[#9dabb9] text-sm leading-relaxed">Bridging technical innovation with business needs by implementing AI models to solve real-world problems.</p>
+                </div>
+            
+                <div class="flex flex-col gap-2 p-6 rounded-xl bg-white dark:bg-[#1a2632] border border-[#e5e7eb] dark:border-[#283039] hover:border-primary/50 transition-all shadow-sm group">
+                    <div class="size-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-2 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined">account_tree</span>
+                    </div>
+                    <h3 class="text-[#111418] dark:text-white font-bold text-lg">Business Process Design</h3>
+                    <p class="text-[#637588] dark:text-[#9dabb9] text-sm leading-relaxed">Streamlining workflows and gathering requirements to drive digital transformation and efficient solutions.</p>
+                </div>
+            </div>
+
+            <section id="projects" class="flex flex-col gap-10 py-20 border-t border-[#283039] mt-10">
+                <div class="flex flex-col gap-3">
+                    <h2 class="text-white text-3xl font-black tracking-tight uppercase">My Portfolio Gallery</h2>
+                    <p class="text-[#9dabb9] text-lg max-w-2xl">
+                        This is a list of my portfolio showcasing my skills in Business Analysis, AI, and Data Science.
+                    </p>
+                </div>
+            
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="flex flex-col gap-4 p-4 rounded-2xl bg-[#1a2632] border border-[#283039] shadow-sm hover:shadow-xl transition-all group">
+                        <div class="w-full aspect-video rounded-xl bg-[#283039] overflow-hidden">
+                            <img src="LINE_ALBUM_81268_260108_4.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                        </div>
+                        <div class="flex flex-col gap-2 px-2 pb-2">
+                            <h3 class="text-xl font-bold text-white">Competition Module 2024</h3>
+                            <p class="text-sm text-[#9dabb9]">"1st Place Winner: Innovative System Design Competition. Developed a cutting-edge solution to solve complex business challenges through creative system architecture."</p>
+                        </div>
+                    </div>
+            
+                    <div class="flex flex-col gap-4 p-4 rounded-2xl bg-[#1a2632] border border-[#283039] shadow-sm hover:shadow-xl transition-all group">
+                        <div class="w-full aspect-video rounded-xl bg-[#283039] overflow-hidden">
+                            <img src="S__8773636.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                        </div>
+                        <div class="flex flex-col gap-2 px-2 pb-2">
+                            <h3 class="text-xl font-bold text-white">National Software Contest (NSC) 2025</h3>
+                            <p class="text-sm text-[#9dabb9]">"AI-Powered Learning Behavior Tracker (Regional Finalist). A smart dashboard for teachers to observe and analyze real-time student participation and attention during online sessions."</p>
+                        </div>
+                    </div>
+            
+                    <div class="flex flex-col gap-4 p-4 rounded-2xl bg-[#1a2632] border border-[#283039] shadow-sm hover:shadow-xl transition-all group">
+                        <div class="w-full aspect-video rounded-xl bg-[#283039] overflow-hidden">
+                            <img src="LINE_ALBUM_81268_260108_2.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                        </div>
+                        <div class="flex flex-col gap-2 px-2 pb-2">
+                            <h3 class="text-xl font-bold text-white">The 12th UEC Seminar in ASEAN 2025</h3>
+                            <p class="text-sm text-[#9dabb9]">"Advancing UEC-ASEAN Collaboration: Selected to present innovative EdTech solutions at a leading international workshop. Developed a real-time monitoring system for educators to bridge the engagement gap in digital classrooms."</p>
+                        </div>
+                    </div>
+            
+                    <div class="flex flex-col gap-4 p-4 rounded-2xl bg-[#1a2632] border border-[#283039] shadow-sm hover:shadow-xl transition-all group">
+                        <div class="w-full aspect-video rounded-xl bg-[#283039] overflow-hidden">
+                            <img src="LINE_ALBUM_81268_260108_3.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                        </div>
+                        <div class="flex flex-col gap-2 px-2 pb-2">
+                            <h3 class="text-xl font-bold text-white">TTT Brother Company,Pitching AI Driven Startup Challenges</h3>
+                            <p class="text-sm text-[#9dabb9]">"Presented a comprehensive business model and AI integration roadmap to company executives, focusing on digital transformation and market scalability."</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-4 p-4 rounded-2xl bg-[#1a2632] border border-[#283039] shadow-sm hover:shadow-xl transition-all group">
+                        <div class="w-full aspect-video rounded-xl bg-[#283039] overflow-hidden">
+                            <img src="LINE_ALBUM_81268_260108_1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                        </div>
+                        <div class="flex flex-col gap-2 px-2 pb-2">
+                            <h3 class="text-xl font-bold text-white">Open House 2025, Burapha University</h3>
+                            <p class="text-sm text-[#9dabb9]">"AAI Department Representative: Innovation Showcase. Selected to represent the Applied AI department in presenting innovative solutions and conducting live IoT demonstrations for distinguished visitors."</p>
+                        </div>
+                    </div>
+            
+                    <div class="flex flex-col gap-4 p-4 rounded-2xl bg-[#1a2632] border border-[#283039] shadow-sm hover:shadow-xl transition-all group">
+                        <div class="w-full aspect-video rounded-xl bg-[#283039] overflow-hidden">
+                            <img src="S__8773638.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                        </div>
+                        <div class="flex flex-col gap-2 px-2 pb-2">
+                            <h3 class="text-xl font-bold text-white">BDI Hackaton AI and Data Innovation for Smart Tourisim </h3>
+                            <p class="text-sm text-[#9dabb9]">"Cultural AI Innovation: 'Nong Muan Jai' Avatar. Developed an AI-powered local tour guide application to promote community-based tourism and boost local income through digital storytelling."</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-4 p-4 rounded-2xl bg-[#1a2632] border border-[#283039] shadow-sm hover:shadow-xl transition-all group">
+                        <div class="w-full aspect-video rounded-xl bg-[#283039] overflow-hidden">
+                            <img src="S__8773643.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                        </div>
+                        <div class="flex flex-col gap-2 px-2 pb-2">
+                            <h3 class="text-xl font-bold text-white">Student Attention Tracker</h3>
+                            <p class="text-sm text-[#9dabb9]">""Currently developing a web-based solution for educators to monitor online classroom engagement. The system utilizes facial expression recognition and behavioral analysis to provide real-time insights into student participation.""</p>
+                        </div>
+                    </div>
+            
+                </div>
+            </section>
+            </section>
+
+            <section id="contact" class="flex flex-col gap-10 py-20 border-t border-[#e5e7eb] dark:border-[#283039] mt-20">
+                <div class="flex flex-col gap-3 text-center">
+                    <h2 class="text-[#111418] dark:text-white text-3xl font-black tracking-tight">GET IN TOUCH</h2>
+                    <p class="text-[#637588] dark:text-[#9dabb9] text-lg max-w-xl mx-auto">
+                        I'm currently looking for an internship opportunity. Let's build something amazing together!
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="flex flex-col gap-6 p-8 rounded-2xl bg-white dark:bg-[#1a2632] border border-[#e5e7eb] dark:border-[#283039] shadow-xl">
+                        <form class="flex flex-col gap-5">
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-bold text-[#111418] dark:text-white">Full Name</label>
+                                <input type="text" placeholder="Your Name" class="h-12 px-4 rounded-lg bg-[#f0f2f4] dark:bg-[#283039] border-none focus:ring-2 focus:ring-primary text-sm dark:text-white">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-bold text-[#111418] dark:text-white">Email Address</label>
+                                <input type="email" placeholder="email@example.com" class="h-12 px-4 rounded-lg bg-[#f0f2f4] dark:bg-[#283039] border-none focus:ring-2 focus:ring-primary text-sm dark:text-white">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label class="text-sm font-bold text-[#111418] dark:text-white">Message</label>
+                                <textarea rows="4" placeholder="How can I help you?" class="p-4 rounded-lg bg-[#f0f2f4] dark:bg-[#283039] border-none focus:ring-2 focus:ring-primary text-sm dark:text-white"></textarea>
+                            </div>
+                            <button type="submit" class="h-12 bg-primary text-white font-bold rounded-lg hover:bg-blue-600 transition-colors shadow-lg shadow-blue-500/25">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="flex flex-col justify-center gap-8">
+                        <div class="flex flex-col gap-6">
+                            <div class="flex items-center gap-5">
+                                <div class="size-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
+                                    <span class="material-symbols-outlined text-3xl">mail</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold text-[#637588] dark:text-[#6b7280] uppercase tracking-widest">Email Me</p>
+                                    <a href="mailto:yadasarakoon0446@gmail.com" class="text-lg font-bold hover:text-primary transition-colors dark:text-white">yadasarakoon0446@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-5">
+                                <div class="size-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
+                                    <span class="material-symbols-outlined text-3xl">call</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold text-[#637588] dark:text-[#6b7280] uppercase tracking-widest">Call Me</p>
+                                    <a href="tel:0644316254" class="text-lg font-bold hover:text-primary transition-colors dark:text-white">064-431-6254</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-5">
+                                <div class="size-14 min-w-[56px] rounded-2xl bg-primary/10 flex items-center justify-center text-primary">
+                                    <span class="material-symbols-outlined text-3xl">location_on</span>
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <p class="text-xs font-bold text-[#637588] dark:text-[#6b7280] uppercase tracking-widest">Location</p>
+                                    <p class="text-lg font-bold dark:text-white leading-snug">
+                                        33/78 Moo 4, Huay Kapi, <br class="hidden md:block">
+                                        Mueang Chon Buri District, Chon Buri 20130, Thailand
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-5 pt-8 border-t border-[#e5e7eb] dark:border-[#283039]">
+                            <h3 class="text-xl font-bold dark:text-white">Follow me on</h3>
+                            <div class="flex flex-wrap gap-4">
+                                <a href="https://www.instagram.com/yadasary?igsh=MTZxbmpmZDk0M3d3Zw%3D%3D&utm_source=qr" class="size-14 rounded-xl bg-white dark:bg-[#1a2632] border border-[#e5e7eb] dark:border-[#283039] flex items-center justify-center hover-instagram transition-all shadow-sm">
+                                    <svg class="size-7 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                </a>
+                                <a href="https://www.facebook.com/share/1DK4PHNUno/?mibextid=wwXIfr" class="size-14 rounded-xl bg-white dark:bg-[#1a2632] border border-[#e5e7eb] dark:border-[#283039] flex items-center justify-center hover-facebook transition-all shadow-sm">
+                                    <svg class="size-7 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                </a>
+                                <a href="https://line.me/ti/p/15vwsp0sxG" class="size-14 rounded-xl bg-white dark:bg-[#1a2632] border border-[#e5e7eb] dark:border-[#283039] flex items-center justify-center hover-line transition-all shadow-sm">
+                                    <svg class="size-8 fill-current" viewBox="0 0 24 24"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.027c-.052.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.571-3.866 2.571-6.002zm-15.858 3.321h-2.433c-.22 0-.4-.18-.4-.4v-5.673c0-.22.18-.4.4-.4h.4c.22 0 .4.18.4.4v5.273h1.633c.22 0 .4.18.4.4v.4c0 .22-.18.4-.4.4zm3.805 0h-.4c-.22 0-.4-.18-.4-.4v-5.673c0-.22.18-.4.4-.4h.4c.22 0 .4.18.4.4v5.673c0 .22-.18.4-.4.4zm6.16 0h-.4c-.22 0-.4-.18-.4-.4v-4.301l-2.091 2.373c-.084.101-.205.151-.334.151s-.25-.05-.334-.151l-2.091-2.373v4.301c0 .22-.18.4-.4.4h-.4c-.22 0-.4-.18-.4-.4v-5.673c0-.22.18-.4.4-.4h.4c.129 0 .25.05.334.151l2.525 2.871 2.525-2.871c.084-.101.205-.151.334-.151h.4c.22 0 .4.18.4.4v5.673c0 .22-.18.4-.4.4zm3.805-2.201h-1.633v-1.139h1.633c.22 0 .4-.18.4-.4v-.4c0-.22-.18-.4-.4-.4h-1.633v-1.139h1.633c.22 0 .4-.18.4-.4v-.4c0-.22-.18-.4-.4-.4h-2.033c-.22 0-.4.18-.4.4v5.673c0 .22.18.4.4.4h2.033c.22 0 .4-.18.4-.4v-.4c0-.22-.18-.4-.4-.4z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="flex flex-col gap-6 px-5 py-10 text-center border-t border-[#e5e7eb] dark:border-[#283039]">
+        
+    </footer>
+</div>
+</body>
+</html>
